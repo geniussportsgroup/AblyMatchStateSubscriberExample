@@ -4,13 +4,16 @@ namespace GeniusSports.AblyMatchStateSubscriberExample
 {
     class Options
     {
-        [Option("client-id", Required = true, HelpText = "Get from  Genius Sports support team")]
+        private const string SecretHelpText =
+            "Get from Genius Sports support team. Email: apikey@geniussports.com";
+
+        [Option("client-id", Required = true, HelpText = SecretHelpText)]
         public string ClientId { get; }
 
-        [Option("client-secret", Required = true, HelpText = "Get from  Genius Sports support team")]
+        [Option("client-secret", Required = true, HelpText = SecretHelpText)]
         public string ClientSecret { get; }
 
-        [Option("api-key", Required = true, HelpText = "Get from  Genius Sports support team")]
+        [Option("api-key", Required = true, HelpText = SecretHelpText)]
         public string ApiKey { get; }
 
         [Option("environment", Required = true, HelpText = "Possible values: ci, uat, prod")]

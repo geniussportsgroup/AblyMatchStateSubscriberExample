@@ -8,7 +8,7 @@ It covers the following parts:
 - Retrieving Ably channel name and access token from Match State Platform API
 - Subscribing for a live Match State feed using Ably's Client
 
-To be able to run this code you will need to get he following secrets from Genius Sports Support Team:
+To be able to run this code you will need to get he following secrets from Genius Sports support team (apikey@geniussports.com):
 - Client ID
 - Client Secret
 - API Key
